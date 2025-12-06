@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!--
+    DOCUMENTAÇÃO DO PROJETO
+    -------------------------------------------------------------------
+    Este projeto foi desenvolvido utilizando exclusivamente HTML puro,
+    sem o uso de CSS ou JavaScript. Por esse motivo, alguns recursos
+    atualmente considerados obsoletos ou não recomendados no HTML5 
+    foram utilizados para viabilizar alinhamentos e organização visual.
+
+    Recursos utilizados que NÃO seguem boas práticas modernas:
+    - Tag <center>
+    - Atributo "align"
+    - Uso de <table> para fins de layout (alinhamento)
+    - Uso de "cellspacing" dentro da tag <table>
+    - Uso de <br> para espaçamento vertical
+
+    Esses recursos continuam funcionando nos navegadores atuais, porém 
+    devem ser evitados em aplicações profissionais. Assim que o uso de 
+    CSS for permitido, todo o layout deverá ser migrado para técnicas 
+    modernas como Flexbox ou Grid.
+
+    Todos os textos explicativos, descrições dos tópicos, estrutura dos 
+    diretórios, boas práticas e revisões gerais de conteúdo foram gerados 
+    com auxílio do ChatGPT, servindo como base didática para estudo de HTML.
+
+    Este arquivo poderá ser revisado futuramente para adequação às 
+    normas contemporâneas de desenvolvimento web.
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIO - Projeto HTML</title>
+</head>
+
+<body>
+
+<header>
+    
+    <hr>
+
+    <!-- Criando tabela para posicionar o texto logo após o logotipo. -->
+    <table>
+        <tr>
+            <td>
+                <img src="img/icons/logotipo.jpg" alt="Logotipo" width="100">
+            </td>
+            <td>
+                <h1>Projeto HTML</h1>
+            </td>
+        </tr>
+    </table>
+    
+    <hr>
+
+    <!-- Criando o menu da página. -->
+    <nav>
+        <h2 id="menu">Menu</h2>
+        <ul>
+            <li><a href="#apresentacao">Apresentação do Curso</a></li>
+            <li><a href="#ferramentas">Ferramentas Utilizadas</a></li>
+            <li><a href="#elementos">Inspetor de Elementos</a></li>
+            <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+            <li><a href="#tags">Falando Sobre Tags</a></li>
+            <li><a href="#atributos">Atributos das Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#rodape">Contato</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<hr>
+
+<main>
+
+    <!-- Apresentação. -->
+    <section id="apresentacao">
+        <h2>Apresentação do Curso</h2>
+
+        <p>Bem-vindo ao nosso <strong>curso introdutório de HTML</strong>!</p>
+
+        <p>Aqui você aprenderá os <u>fundamentos essenciais</u> para construir suas primeiras páginas web, compreendendo desde o uso das ferramentas até a criação de textos, links e listas. O objetivo é apresentar cada recurso de forma <em>simples</em>, <em>prática</em> e <strong>direta</strong>, permitindo que você desenvolva confiança para escrever seus próprios códigos HTML.</p>
+
+        <p>A seguir, você encontrará os tópicos que serão abordados ao longo do curso, cada um com uma <strong>breve explicação</strong> para guiar sua jornada no desenvolvimento web.</p>
+
+        <a href="#menu"><small>Voltar ao Menu</small></a>
+    </section>
+
+    <!-- Ferramentas -->
+    <section id="ferramentas">
+        <h2>Ferramentas Utilizadas</h2>
+
+        <p>Neste tópico, você conhecerá as principais ferramentas utilizadas no curso: o editor de código <strong>Visual Studio Code</strong> e o navegador <strong>Google Chrome</strong>. Mesmo assim, você terá liberdade para escolher outras ferramentas com as quais se sentir mais confortável.</p>
+
+        <p>Você também aprenderá como <u>abrir e visualizar sua página HTML</u> tanto pelo VS Code quanto diretamente no navegador, garantindo que o conteúdo esteja sendo exibido corretamente.</p>
+
+        <a href="#menu"><small>Voltar ao Menu</small></a>
+    </section>
+
+    <!-- Inspetor de Elementos -->
+    <section id="elementos">
+        <h2>Inspetor de Elementos</h2>
+
+        <p>Aqui você aprenderá a utilizar o <strong>Inspetor de Elementos</strong>, uma ferramenta poderosa presente nos navegadores modernos. Com ela, será possível visualizar o código HTML da página, entender sua estrutura, testar alterações e até identificar erros. É uma das ferramentas mais importantes para quem deseja aprender desenvolvimento web.</p>
+
+        <a href="#menu"><small>Voltar ao Menu</small></a>
+    </section>
+
+    <!-- Estrutura Básica -->
+    <section id="estrutura">
+        <h2>Estrutura Básica do HTML</h2>
+
+        <p>Neste tópico, você conhecerá a <strong>estrutura mínima</strong> necessária para qualquer documento HTML.</p>
+
+        <p>Falaremos sobre as principais tags como <strong>&lt;!DOCTYPE html&gt;</strong>, <strong>&lt;html&gt;</strong>, <strong>&lt;head&gt;</strong> e <strong>&lt;body&gt;</strong>, explicando o papel de cada uma na organização do conteúdo exibido na tela.</p>
+
+        <a href="#menu"><small>Voltar ao Menu</small></a>
+    </section>
+
+    <!-- Tags -->
+    <section id="tags">
+        <h2>Falando Sobre Tags</h2>
+
+        <p>Neste tópico, você entenderá o que são <strong>tags HTML</strong>, como são escritas e qual é a função de cada uma dentro da página. Veremos exemplos práticos que mostram como elas influenciam a estrutura e a apresentação do conteúdo.</p>
+
+        <a href="#menu"><small>Voltar ao Menu</small></a>
+    </section>
+
+    <!-- Atributos -->
+    <section id="atributos">
+        <h2>Atributos das Tags</h2>
+
+        <p>Você aprenderá o que são <strong>atributos HTML</strong> e como eles complementam as tags adicionando informações extras ou comportamentos específicos. Entre os atributos ensinados estão <em>id</em>, <em>class</em>, <em>href</em>, <em>src</em> e outros, todos acompanhados de exemplos claros.</p>
+
+        <a href="#menu"><small>Voltar ao Menu</small></a>
+    </section>
+
+    <!-- Textos -->
+    <section id="textos">
+        <h2>Textos</h2>
+
+        <p>Neste tópico você aprenderá a manipular textos no HTML utilizando tags para criar <strong>parágrafos</strong>, <strong>cabeçalhos</strong> e aplicar formatações como <strong>negrito</strong>, <em>itálico</em> e <u>sublinhado</u>. Esses elementos são fundamentais para deixar o conteúdo mais claro e bem estruturado.</p>
+
+        <a href="#menu"><small>Voltar ao Menu</small></a>
+    </section>
+
+    <!-- Listas -->
+    <section id="listas">
+        <h2>Listas Ordenadas e Não Ordenadas</h2>
+
+        <p>Neste tópico você aprenderá a criar listas ordenadas com a tag <strong>&lt;ol&gt;</strong> e listas não ordenadas com <strong>&lt;ul&gt;</strong>, além de estruturar seus itens utilizando <strong>&lt;li&gt;</strong>. Listas são ótimas para organizar informações de forma clara e visual.</p>
+
+        <a href="#menu"><small>Voltar ao Menu</small></a>
+    </section>
+
+    <!-- Links -->
+    <section id="links">
+        <h2>Links</h2>
+
+        <p>Aqui você aprenderá a criar links usando a tag <strong>&lt;a&gt;</strong>. Veremos como redirecionar o usuário para outras páginas, arquivos, sites externos ou até para partes específicas da mesma página. Também explicaremos o uso dos atributos <em>href</em> e <em>target</em>.</p>
+
+        <a href="#menu"><small>Voltar ao Menu</small></a>
+    </section>
+
+</main>
+
+<hr>
+
+<footer id="rodape">
+    
+    <!-- Sabemos que não é uma boa prática a utilização do atributo e tag CENTER, porém como se trata de um projeto apenas em HTML, utilizei aqui para melhorar a página -->
+    <p align="center"><strong>CONTATO</strong></p>
+
+    <p align="center">
+        <strong>Munir Duarte Paiva</strong>
+    </p>
+
+    <table align="center" cellspacing="8">
+        <tr>
+            <td><img src="img/icons/linkedin.png" width="20" alt="LinkedIn"></td>
+            <td>
+                <a href="https://www.linkedin.com/in/SEU_USUARIO_AQUI" target="_blank">
+                    Meu LinkedIn
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="img/icons/phone.png" width="20" alt="Telefone"></td>
+            <td><strong>Telefone:</strong> (81) 99999-9999</td>
+        </tr>
+
+        <tr>
+            <td><img src="img/icons/email.png" width="20" alt="Email"></td>
+            <td><strong>Email:</strong> munirpaiva@hotmail.com</td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>
